@@ -1,6 +1,7 @@
-<a href="버튼을 눌렀을 때 이동할 링크" target="_blank"><img src="https://img.shields.io/badge/Tistory-T-orange"/></a>
+<a href="https://doubles-won.tistory.com/" target="_blank"><img src="https://img.shields.io/badge/Tistory-T-orange"/></a>
+<a href="https://www.linkedin.com/in/%EC%88%9C%EC%9B%90-%EC%86%8C-bbb51b10a/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-#0A66C2?style=flat&logo=appveyor"/></a>
 # Hi there 👋, 
-
+#0A66C2
 ### Who Am I
 - 
 
