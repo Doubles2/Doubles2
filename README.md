@@ -13,9 +13,9 @@ But, I am an **AI enthusiast** who is studying steadily🌱.
 ⚡ Career
 | **Type**                | **Date**              | **Contents**                             | **Organization**       |
 |---------------------|-------------------|--------------------------------------|--------------------|
-| **:mortar_board:Education**           | 2014.3 ~ 2021.2   | Department of Applied Statistics     | **Kyonggi University** |
-| **External activities** | 2019.11 ~ 2019.12 | AI Manager                           | **Nipa**               |
-| **External activities** | 2020.6 ~ 2020.9   | Data Youth Campus(Yonsei University) | **Kdata**              |
-| **External activities** | 2020.10 ~ 2021.1  | Google MachineLearning BootCamp      | **Google Developers**  |
-| **External activities** | 2021.8 ~ 2021.10  | Tableau BootCamp      | **Tableau**  |
-| **:office:Employment** | 2021. 6 ~ | Data Scientist | **LOTTE DATA COMMUNICATION COMPANY** |
+| **:mortar_board:Education**           | 2009.3 ~ 2017.2   | Department of Electroninc Engineering (B.S.)     | **Kyonggi University** |
+| **External activities** | 2012.3 ~ 2017.2 | E.o.N                           | **Kyonggi University**               |
+| **External activities** | 2014.8 ~ 2015.7   | Microsoft Student Partners | **Microsoft**              |
+| **:office:Employment** | 2015.7 ~ 2015.12  | Android Developer      | **Dot Inc.**  |
+| **:mortar_board:Education**  | 2017.3 ~ 2019.2  | Department of Biomedical Engineering (M.S.)      | **Hanyang University**  |
+| **:office:Employment** | 2019.7 ~ | Data Scientist | **LOTTE DATA COMMUNICATION COMPANY** |
