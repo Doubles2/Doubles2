@@ -3,10 +3,10 @@
 <a href="https://www.instargram.com/doubles.w/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
 # Hi there 👋, I'm Soonwon :)
 
-I'm a data scientist at Lotte Data Communication Company.
-I majored in biomedical engineering with AI, but now I'm processing data in the field of distribution/service/manufacturing.
-These days, I'm trying to solve problems by designing traditional machine learning models rather than deep learning models.
-But, I am an AI enthusiast who is studying steadily.
+I'm a data scientist at Lotte Data Communication Company.  
+I majored in biomedical engineering with AI, but now I'm processing data in the field of distribution/service/manufacturing.  
+These days, I'm trying to solve problems by designing traditional machine learning models rather than deep learning models.  
+But, I am an AI enthusiast who is studying steadily.  
  
 <!--
 **Doubles2/Doubles2** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
