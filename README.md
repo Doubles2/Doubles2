@@ -8,7 +8,8 @@ I majored in biomedical engineering with AI, but now I'm processing data in the 
 These days, I'm trying to solve problems by designing traditional machine learning models rather than deep learning models.  
 But, I am an **AI enthusiast** who is studying steadily🌱.  
  
- 
+ #
+
 ⚡💻  Career
 | **Type**                | **Date**              | **Contents**                             | **Organization**       |
 |---------------------|-------------------|--------------------------------------|--------------------|
