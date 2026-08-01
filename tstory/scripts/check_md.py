@@ -22,18 +22,21 @@ TAGS = {
     "제목1": "스타일 → 제목1  (h2 / size26)",
     "제목2": "스타일 → 제목2  (h3 / size23)",
     "본문2": "기본값, 조작 불필요  (p / size16)",
-    "인용구": "인용구 버튼 → 스타일1",
+    "인용구": "인용구 → 스타일2",
+    "인용문": "인용구 → 스타일1 + 서체 본명조 (남의 말)",
+    "표 헤더": "기울임 — 표 바로 위 한 줄",
     "목록": "불릿 목록 버튼",
     "번호목록": "번호 목록 버튼",
-    "표": "표 버튼",
+    "표": "표 버튼 (데이터 행만)",
     "코드블록": "코드블록 버튼",
-    "구분선": "구분선 버튼 → 스타일1",
+    "구분선": "구분선 → 스타일5",
+    "태그 칸 입력용": "본문 아님 — 티스토리 태그 입력칸",
 }
 
 # 이 블로그에서 쓰지 않는 프리셋 — 실수로 쓰면 알려준다
 UNUSED_PRESETS = {"제목3", "본문1", "본문3"}
 
-TAG_RE = re.compile(r"^\(([^)·\s]+)(?:\s*·\s*[^)]*)?\)\s*$")
+TAG_RE = re.compile(r"^\(([^)·]+?)(?:\s*·\s*[^)]*)?\)\s*$")
 IMG_RE = re.compile(r"^\((?P<file>[^)\s]+\.png)\s+삽입\)(?:\s*—\s*(?P<cap>.*))?$")
 
 
@@ -83,6 +86,14 @@ def check(path: Path) -> tuple[list[str], list[str]]:
         if re.match(r"^\([^)]{1,40}\)$", s):
             warns.append(f"line {no}: 태그처럼 보이는데 형식이 안 맞습니다 — {s}")
 
+    # 표: 마크다운 헤더 구분선은 티스토리에서 재현되지 않는다
+    for no, line in enumerate(lines, 1):
+        if re.fullmatch(r"\|(\s*:?-{2,}:?\s*\|)+", line.strip()):
+            errors.append(
+                f"line {no}: 표에 마크다운 구분선(| --- |)이 있습니다 — "
+                f"티스토리 표엔 헤더가 없습니다. 헤더는 (표 헤더) 한 줄로 위에 쓰세요"
+            )
+
     # figures present but never referenced
     for png in sorted(folder.glob("fig-*.png")):
         if png.name not in referenced:
@@ -106,6 +117,11 @@ def check(path: Path) -> tuple[list[str], list[str]]:
     tail = text.rsplit("📎", 1)[-1]
     if len(re.findall(r"#[^\s#]+", tail)) < 5:
         errors.append("맨 아래 해시태그 줄이 없습니다 (하단 출처 다음, 8~10개)")
+    elif "(태그 칸 입력용)" not in text:
+        warns.append(
+            "해시태그 앞에 (태그 칸 입력용) 태그가 없습니다 "
+            "— 본문이 아니라 태그 입력칸에 넣는다는 표시가 필요합니다"
+        )
 
     if not (folder / "thumbnail.png").exists():
         warns.append("thumbnail.png 이 글 폴더에 없습니다")
