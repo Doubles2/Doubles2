@@ -95,4 +95,4 @@ ln -s "$(pwd)/skills/tstory" ~/.claude/skills/tstory
 
 ## 라이선스
 
-정하지 않았습니다. 필요하시면 `LICENSE` 파일을 추가하세요.
+[MIT](./LICENSE) — 마음대로 쓰시되 저작권 표시만 남겨 주세요.
