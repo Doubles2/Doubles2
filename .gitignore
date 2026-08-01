@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+
+# 스킬이 만들어내는 작업 결과물 (저장소에 넣지 않음)
+output/
+*.bak
