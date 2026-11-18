@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>thumbnail</title>
+<style>
+  /*
+    Palette and geometry measured pixel-by-pixel from the published thumbnails
+    on doubles-won.tistory.com (see references/thumbnail-spec.md).
+    Frame is 1200x630 CSS px; render at scale 2 for the 2400x1260 the blog uses.
+  */
+  :root {
+    --bg:      #0e1320;  /* card background (full bleed) */
+    --wm:      #1a2233;  /* giant issue-number watermark */
+    --tile:    #222c40;  /* inactive tiles in the 3x3 motif */
+    --accent:  #e0795a;  /* coral: bar, badge, rule, active tiles */
+    --title:   #f5f1eb;  /* warm off-white */
+    --muted:   #aeb2b8;  /* subtitle and blog address */
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 1200px; height: 630px;
+    overflow: hidden;
+    background: var(--bg);
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .card { position: relative; width: 1200px; height: 630px; overflow: hidden; }
+
+  /* left accent bar — 11px, full height */
+  .bar { position: absolute; left: 0; top: 0; width: 11px; height: 630px; background: var(--accent); }
+
+  /* giant issue number, top right */
+  .watermark {
+    position: absolute; top: -34px; right: 62px;
+    font-size: 290px; font-weight: 800; line-height: 1;
+    color: var(--wm); letter-spacing: -0.04em;
+  }
+
+  /* 3x3 rounded tile motif, right side. Top row uses the accent colour. */
+  .motif {
+    position: absolute; right: 37px; top: 300px;
+    display: grid; grid-template-columns: repeat(3, 80px); gap: 20px;
+  }
+  .motif i { display: block; width: 80px; height: 78px; border-radius: 16px; background: var(--tile); }
+  .motif i.on { background: var(--accent); }
+
+  /* --- content column, left --- */
+  .badge {
+    position: absolute; left: 93px; top: 132px;
+    border: 2px solid var(--accent); border-radius: 999px;
+    padding: 9px 25px;
+    font-size: 25px; font-weight: 700; line-height: 1.2;
+    color: var(--accent); white-space: nowrap;
+  }
+
+  .word {
+    position: absolute; left: 93px; top: 258px;
+    font-size: 116px; font-weight: 800; line-height: 1;
+    color: var(--title); letter-spacing: -0.025em;
+    max-width: 700px; white-space: nowrap;
+  }
+  /* long topic words step down so they never reach the tile motif */
+  .word.len-md { font-size: 92px; top: 272px; }
+  .word.len-lg { font-size: 72px; top: 286px; }
+
+  .rule {
+    position: absolute; left: 93px; top: 430px;
+    width: 84px; height: 4px; border-radius: 2px; background: var(--accent);
+  }
+
+  .title {
+    position: absolute; left: 93px; top: 462px;
+    font-size: 40px; font-weight: 700; line-height: 1.25;
+    color: var(--title); max-width: 700px;
+  }
+  .title.len-lg { font-size: 33px; top: 466px; }
+
+  .subtitle {
+    position: absolute; left: 93px; top: 522px;
+    font-size: 28px; font-weight: 400; line-height: 1.3;
+    color: var(--muted); max-width: 700px;
+  }
+  .subtitle.len-lg { font-size: 24px; top: 526px; }
+
+  .site {
+    position: absolute; left: 93px; top: 590px;
+    font-size: 23px; font-weight: 400;
+    color: var(--muted); opacity: 0.72; letter-spacing: 0.01em;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="bar"></div>
+    <div class="watermark">{{NUMBER}}</div>
+
+    <div class="motif">
+      <i class="on"></i><i class="on"></i><i class="on"></i>
+      <i></i><i></i><i></i>
+      <i></i><i></i><i></i>
+    </div>
+
+    <div class="badge">{{SERIES}}</div>
+    <div class="word {{WORD_CLASS}}">{{WORD}}</div>
+    <div class="rule"></div>
+    <div class="title {{TITLE_CLASS}}">{{TITLE}}</div>
+    <div class="subtitle {{SUBTITLE_CLASS}}">{{SUBTITLE}}</div>
+    <div class="site">{{SITE}}</div>
+  </div>
+</body>
+</html>

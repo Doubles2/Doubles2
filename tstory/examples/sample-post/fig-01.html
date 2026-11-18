@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>diagram</title>
+<style>
+  /*
+    Body-figure template. Light theme on purpose: the Tistory post body is a
+    white page with #333 text, so a dark card would break the reading flow.
+    Only the coral accent is shared with the thumbnail.
+
+    To go dark, swap the four --d-* values in :root for the thumbnail palette.
+
+    Render at 1000x(auto) via:  python3 scripts/render.py fig.html fig.png --width 1000 --height 560
+    Adjust --height to the content; trim any slack with the .stage padding.
+  */
+  :root {
+    --d-bg:     #ffffff;
+    --d-panel:  #f8f9fa;
+    --d-line:   #dee2e6;
+    --d-text:   #24292f;
+    --d-muted:  #6b7280;
+    --accent:   #e0795a;
+    --accent-soft: #fdf0eb;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    background: var(--d-bg);
+    color: var(--d-text);
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .stage { padding: 32px 36px; }
+
+  .fig-title {
+    font-size: 26px; font-weight: 700; margin-bottom: 6px;
+  }
+  .fig-sub { font-size: 17px; color: var(--d-muted); margin-bottom: 26px; }
+
+  /* ---- horizontal / vertical flow ---- */
+  .flow { display: flex; align-items: stretch; gap: 0; }
+  .flow.vertical { flex-direction: column; align-items: center; }
+
+  .box {
+    flex: 1;
+    background: var(--d-panel);
+    border: 1px solid var(--d-line);
+    border-radius: 10px;
+    padding: 18px 20px;
+    min-width: 0;
+  }
+  .box.accent { border-color: var(--accent); background: var(--accent-soft); }
+  .box .k { font-size: 19px; font-weight: 700; margin-bottom: 6px; }
+  .box .v { font-size: 16px; color: var(--d-muted); line-height: 1.55; }
+
+  /* arrow between boxes */
+  .arrow {
+    flex: 0 0 46px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--accent); font-size: 26px; font-weight: 700;
+  }
+  .arrow.down { flex: 0 0 34px; }
+
+  /* ---- numbered step list ---- */
+  .steps { display: flex; flex-direction: column; gap: 14px; }
+  .step { display: flex; align-items: flex-start; gap: 14px; }
+  .step .n {
+    flex: 0 0 34px; height: 34px;
+    border-radius: 50%; background: var(--accent); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 17px; font-weight: 700;
+  }
+  .step .body { padding-top: 4px; }
+  .step .body b { font-size: 18px; }
+  .step .body span { display: block; font-size: 16px; color: var(--d-muted); margin-top: 3px; }
+
+  /* ---- layered stack ---- */
+  .layers { display: flex; flex-direction: column; gap: 10px; }
+  .layer {
+    border: 1px solid var(--d-line); border-left: 5px solid var(--accent);
+    border-radius: 8px; background: var(--d-panel);
+    padding: 14px 18px;
+    display: flex; align-items: baseline; gap: 14px;
+  }
+  .layer .t { font-size: 18px; font-weight: 700; flex: 0 0 190px; }
+  .layer .d { font-size: 16px; color: var(--d-muted); }
+
+  .caption { margin-top: 22px; font-size: 14px; color: var(--d-muted); }
+</style>
+
+  <style>
+    .phase { margin-bottom: 22px; }
+    .phase-label {
+      display:inline-block; font-size:15px; font-weight:700; color:#fff;
+      background:var(--accent); border-radius:999px; padding:5px 16px; margin-bottom:10px;
+    }
+    .chips { display:flex; gap:10px; flex-wrap:wrap; }
+    .chip {
+      border:1px solid var(--d-line); background:var(--d-panel);
+      border-radius:10px; padding:11px 15px; font-size:16px; flex:1; min-width:0;
+    }
+    .chip b { display:block; font-size:13px; color:var(--accent); margin-bottom:3px; }
+    .loop {
+      margin-top:6px; padding:13px 18px; border:1px dashed var(--accent);
+      border-radius:10px; background:var(--accent-soft);
+      font-size:16px; font-weight:700; text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="fig-title">머신러닝 라이프사이클 10단계</div>
+    <div class="fig-sub">세 국면으로 묶어 보면 흐름이 잡힙니다</div>
+
+    <div class="phase">
+      <div class="phase-label">데이터를 만든다 · 1~4</div>
+      <div class="chips">
+        <div class="chip"><b>1</b>문제 정의</div>
+        <div class="chip"><b>2</b>데이터 수집</div>
+        <div class="chip"><b>3</b>데이터 전처리</div>
+        <div class="chip"><b>4</b>탐색적 분석(EDA)</div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-label">모델을 만든다 · 5~7</div>
+      <div class="chips">
+        <div class="chip"><b>5</b>모델 선택</div>
+        <div class="chip"><b>6</b>모델 학습</div>
+        <div class="chip"><b>7</b>모델 평가</div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-label">모델을 운영한다 · 8~10</div>
+      <div class="chips">
+        <div class="chip"><b>8</b>모델 배포</div>
+        <div class="chip"><b>9</b>모델 모니터링</div>
+        <div class="chip"><b>10</b>유지보수 &amp; 반복</div>
+      </div>
+    </div>
+
+    <div class="loop">10단계는 끝이 아니라 다시 1단계로 &nbsp;↺&nbsp; 직선이 아니라 순환</div>
+  </div>
+</body>
+</html>
