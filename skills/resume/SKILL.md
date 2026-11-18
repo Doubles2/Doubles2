@@ -8,8 +8,8 @@ description: 소순원의 이력서·입사지원서·경력기술서를 채용�
 사용자(소순원)의 경력 사실은 `~/code/doubles2/private/resume-data/profile.md`에 있다. **거기 없는 사실은 지어내지 않는다.**
 없는 값이 필요하면 물어보고, 새로 받은 값은 profile.md에 반영한다.
 
-이 폴더(`private/`)는 공개 repo에 올라가지 않는 비공개 repo `Doubles2/doubles2-private`이다.
-폴더가 없으면 지어내지 말고 멈춘 뒤, `git clone https://github.com/Doubles2/doubles2-private ~/code/doubles2/private`를 안내한다.
+이 폴더(`private/`)는 개인 자료라 GitHub에 올리지 않고 사용자의 Mac에만 있다.
+폴더가 없으면 지어내지 말고 멈춘 뒤, 개인 자료가 없는 컴퓨터라고 알린다.
 
 작성 스타일은 `~/code/doubles2/private/resume-data/style.md`, 연봉 기재는 `~/code/doubles2/private/resume-data/salary.md`를 읽는다.
 이 두 파일은 이력서 문장을 쓰기 전에 읽어야 한다. 나중에 고치면 전체를 다시 손봐야 한다.

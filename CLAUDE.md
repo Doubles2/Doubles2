@@ -17,7 +17,7 @@
 | `projects/<YYYY-MM>-<이름>/` | 코드·모델 작업 하나. 규칙은 `projects/README.md` |
 | `wiki/` | 노하우 위키. 규칙은 `wiki/CLAUDE.md`, 목차는 `wiki/index.md` |
 | `repos.md` | 이 repo 밖에 있는 공개 repo 포인터 |
-| `private/` | 비공개 repo `Doubles2/doubles2-private`의 clone. gitignore 처리됨 |
+| `private/` | 개인 자료(이력서 자료, 비공개 repo 포인터). 이 컴퓨터에만 있고 GitHub에 올리지 않는다 |
 | `.claude-plugin/` | 플러그인·마켓플레이스 매니페스트 |
 | `.claude/settings.json` | 받아 쓰는 외부 스킬 마켓플레이스 목록 |
 
@@ -34,7 +34,7 @@
 ## 다른 repo
 
 - 공개 repo: `repos.md`
-- 비공개 repo: `private/repos.md` (없으면 비공개 repo를 clone하지 않은 컴퓨터다)
+- 비공개 repo: `private/repos.md` (없으면 개인 자료가 없는 컴퓨터다)
 
 포인터에 적힌 경로에 repo가 없으면 그 경로로 clone한 뒤 작업한다.
 그 repo를 고치기 전에는 그 repo의 `CLAUDE.md`나 `README.md`를 먼저 읽는다.

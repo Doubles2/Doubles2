@@ -11,7 +11,7 @@ __pycache__/
 .env
 .env.*
 
-# 비공개 repo(Doubles2/doubles2-private)의 clone 자리
+# 개인 자료: 이 컴퓨터에만 두고 어디에도 올리지 않는다
 private/
 
 # 개인 로컬 설정
