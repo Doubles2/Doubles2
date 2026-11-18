@@ -207,7 +207,7 @@
 ## 검사
 
 ```bash
-python3 ~/.claude/skills/tstory/scripts/check_md.py output/<슬러그>/post.md
+python3 ~/code/doubles2/skills/tstory/scripts/check_md.py output/<슬러그>/post.md
 ```
 
 ## 값이 안 맞을 때 확인하는 법

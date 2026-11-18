@@ -1,0 +1,11 @@
+{
+  "name": "doubles2-skills",
+  "description": "Doubles2(소순원)가 직접 만들어 쓰는 Claude Code 스킬 모음",
+  "author": {
+    "name": "Doubles2"
+  },
+  "homepage": "https://github.com/Doubles2/Doubles2",
+  "repository": "https://github.com/Doubles2/Doubles2",
+  "license": "MIT",
+  "skills": "./skills"
+}

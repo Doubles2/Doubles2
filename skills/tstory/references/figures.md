@@ -22,7 +22,7 @@
 원본 HTML은 **글 폴더에 `fig-NN.html`로 남겨둡니다** — 나중에 그림을 수정하려면 이게 있어야 합니다.
 
 ```bash
-SKILL_DIR=~/.claude/skills/tstory
+SKILL_DIR=~/code/doubles2/skills/tstory
 python3 $SKILL_DIR/scripts/render.py \
   output/<슬러그>/fig-01.html output/<슬러그>/fig-01.png --width 1000 --height 900 --trim
 ```
@@ -40,7 +40,7 @@ python3 $SKILL_DIR/scripts/render.py \
 ## 수치 · 플롯 → matplotlib
 
 ```python
-import os, sys; sys.path.insert(0, os.path.expanduser("~/.claude/skills/tstory/scripts"))
+import os, sys; sys.path.insert(0, os.path.expanduser("~/code/doubles2/skills/tstory/scripts"))
 from plotstyle import apply_style, COLORS, save
 import matplotlib.pyplot as plt
 

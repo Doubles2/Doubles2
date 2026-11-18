@@ -40,7 +40,7 @@
 ## 사용
 
 ```bash
-SKILL_DIR=~/.claude/skills/tstory
+SKILL_DIR=~/code/doubles2/skills/tstory
 python3 $SKILL_DIR/scripts/thumbnail.py \
   --series "MLflow 완전정복" \
   --word "MLflow" \

@@ -1,0 +1,26 @@
+{
+  "extraKnownMarketplaces": {
+    "doubles2": {
+      "source": { "source": "github", "repo": "Doubles2/Doubles2" }
+    },
+    "addy-agent-skills": {
+      "source": { "source": "git", "url": "https://github.com/addyosmani/agent-skills.git" }
+    },
+    "karpathy-skills": {
+      "source": { "source": "git", "url": "https://github.com/forrestchang/andrej-karpathy-skills.git" }
+    },
+    "claude-code-plugins": {
+      "source": { "source": "github", "repo": "anthropics/claude-code" }
+    },
+    "claude-community": {
+      "source": { "source": "github", "repo": "anthropics/claude-plugins-community" }
+    }
+  },
+  "enabledPlugins": {
+    "doubles2-skills@doubles2": true,
+    "agent-skills@addy-agent-skills": true,
+    "andrej-karpathy-skills@karpathy-skills": true,
+    "code-review@claude-code-plugins": true,
+    "eli5@claude-community": true
+  }
+}

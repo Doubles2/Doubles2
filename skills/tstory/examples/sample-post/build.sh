@@ -4,7 +4,7 @@
 #   아래 옵션    → thumbnail.png
 set -e
 cd "$(dirname "$0")"
-SKILL_DIR=~/.claude/skills/tstory
+SKILL_DIR=~/code/doubles2/skills/tstory
 
 # --- 썸네일 -------------------------------------------------------------
 python3 $SKILL_DIR/scripts/thumbnail.py \

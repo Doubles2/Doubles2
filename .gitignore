@@ -4,7 +4,29 @@
 # Python
 __pycache__/
 *.py[cod]
+.venv/
+.ipynb_checkpoints/
 
-# 스킬이 만들어내는 작업 결과물 (저장소에 넣지 않음)
+# 비밀값
+.env
+.env.*
+
+# 비공개 repo(Doubles2/doubles2-private)의 clone 자리
+private/
+
+# 개인 로컬 설정
+.claude/settings.local.json
+
+# 스킬이 만들어내는 작업 결과물
 output/
 *.bak
+
+# 데이터·모델 가중치 (projects/*의 README에 받는 법을 적는다)
+data/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.parquet
+*.h5
+mlruns/

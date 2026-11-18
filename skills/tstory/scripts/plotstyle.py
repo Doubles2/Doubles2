@@ -6,7 +6,7 @@ should sit in the reading flow rather than interrupt it. The coral accent is the
 one thing shared with the dark thumbnail.
 
 Usage:
-    import os, sys; sys.path.insert(0, os.path.expanduser("~/.claude/skills/tstory/scripts"))
+    import os, sys; sys.path.insert(0, os.path.expanduser("~/code/doubles2/skills/tstory/scripts"))
     from plotstyle import apply_style, COLORS, save
 
     apply_style()

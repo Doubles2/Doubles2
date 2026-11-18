@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "doubles2",
+  "description": "Doubles2(소순원)가 직접 만들어 쓰는 Claude Code 스킬 모음",
+  "owner": {
+    "name": "Doubles2",
+    "url": "https://github.com/Doubles2"
+  },
+  "plugins": [
+    {
+      "name": "doubles2-skills",
+      "source": "./",
+      "description": "티스토리 포스팅(tstory), 책 복습 노트(book-study), 이력서 작성(resume) 등 개인 스킬",
+      "license": "MIT"
+    }
+  ]
+}

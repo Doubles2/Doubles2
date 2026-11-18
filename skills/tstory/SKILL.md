@@ -115,16 +115,17 @@ curl -sL -A "Mozilla/5.0" https://doubles-won.tistory.com/<번호> -o /tmp/post.
 
 ## 경로 규칙
 
-이 스킬은 `~/.claude/skills/tstory`로 링크돼 있어 **어느 폴더에서든** 호출됩니다.
+이 스킬은 홈 레포(`~/code/doubles2`)의 플러그인으로 설치돼 **어느 폴더에서든** 호출됩니다.
+홈 레포는 어느 컴퓨터에서든 `~/code/doubles2`에 clone하는 것이 규칙입니다.
 따라서 경로를 상대경로로 쓰지 마세요.
 
-- **스킬 자산**(scripts·assets·references) → `~/.claude/skills/tstory/…` 절대경로
+- **스킬 자산**(scripts·assets·references) → `~/code/doubles2/skills/tstory/…` 절대경로
 - **산출물** → 사용자가 지금 작업 중인 폴더 기준 `output/<슬러그>/`
 
 아래 예시들은 이 규칙을 따릅니다. 편의상 `SKILL_DIR`을 먼저 잡아두면 편합니다:
 
 ```bash
-SKILL_DIR=~/.claude/skills/tstory
+SKILL_DIR=~/code/doubles2/skills/tstory
 ```
 
 ## 절대 규칙
