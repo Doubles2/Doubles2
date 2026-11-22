@@ -48,6 +48,7 @@ The skills are written in Korean.
 | [`effective-python`](./skills/effective-python) | Writes and reviews Python code following the 90 rules of *Effective Python* (2nd ed.) |
 | [`pragmatic-programmer`](./skills/pragmatic-programmer) | Uses *The Pragmatic Programmer* principles (ETC, DRY, orthogonality, reversibility) when designing and reviewing code |
 | [`book-voice`](./skills/book-voice) | Writes in the voice and structure of books the author studied (*The Pragmatic Programmer*, *Effective Python*) |
+| [`git-confirm`](./skills/git-confirm) | Commits and pushes as separate steps, each confirmed by the user right before running |
 
 ### 📦 Install
 

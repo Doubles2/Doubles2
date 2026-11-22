@@ -10,7 +10,7 @@
     {
       "name": "doubles2-skills",
       "source": "./",
-      "description": "티스토리 포스팅(tstory), 책 복습 노트(book-study), 이력서 작성(resume), 파이썬 코딩 규칙(effective-python), 설계 원칙(pragmatic-programmer), 책 말투 글쓰기(book-voice) 등 개인 스킬",
+      "description": "티스토리 포스팅(tstory), 책 복습 노트(book-study), 이력서 작성(resume), 파이썬 코딩 규칙(effective-python), 설계 원칙(pragmatic-programmer), 책 말투 글쓰기(book-voice), git 확인 절차(git-confirm) 등 개인 스킬",
       "license": "MIT"
     }
   ]

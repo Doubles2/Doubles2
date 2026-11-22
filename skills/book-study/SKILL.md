@@ -38,7 +38,7 @@ description: 책 공부 복습 노트 정리. 사용자가 읽고 밑줄 그은 
    - 실용주의 프로그래머 → `pragmatic-programmer/references/topics.md`의 해당 Topic에 ✅와 Tip 번호, 적용 요령을 보강.
    - 파이썬 코딩의 기술 → `effective-python/references/better-ways.md`의 해당 항목 요령을 밑줄 기준으로 보강.
    - 책 말투에서 새로 보인 특징은 `book-voice/references/<책>.md`에 추가.
-   - 로컬 커밋까지만 하고, push는 사용자에게 확인한 뒤 한다.
+   - 커밋과 push는 git-confirm 스킬대로 각각 사용자에게 확인받은 뒤 따로 한다.
 
 ## 책별 노션 위치
 - **실용주의 프로그래머**: `Topic 노트` DB `collection://41c4b119-52c5-8130-9773-000b295d5051`, 상위 https://app.notion.com/p/41c4b11952c580549d70d9f6135231a9
