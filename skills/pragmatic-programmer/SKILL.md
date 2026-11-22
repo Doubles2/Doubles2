@@ -66,6 +66,6 @@ effective-python이 "이 줄을 파이썬답게"를 맡는다면, 이 스킬은 
 ## 참고
 
 - `references/topics.md`: 53개 Topic 전체와 코딩할 때의 적용 요령. 사용자가 이미 공부한 Topic은 표시해 두었다.
-- 사용자의 공부 자료: `/Users/soonwon/study/책/공부_실용주의_프래그래머(20주년 기념판)/내용/` (Topic별 밑줄 사진),
+- 사용자의 공부 자료: `/Users/soonwon/study/책/공부_실용주의 프래그래머(20주년 기념판)/내용/` (Topic별 밑줄 사진),
   노션 `Topic 노트` DB(book-study 스킬이 만든 복습 페이지).
   사용자가 공부한 Topic의 원칙을 쓸 때는 "Topic N에서 본 ~"처럼 연결해 주면 복습이 된다.
