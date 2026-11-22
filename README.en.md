@@ -47,7 +47,7 @@ The skills are written in Korean.
 | [`resume`](./skills/resume) | Tailors a resume to a job posting and fills Word application forms without breaking their formatting |
 | [`effective-python`](./skills/effective-python) | Writes and reviews Python code following the 90 rules of *Effective Python* (2nd ed.) |
 | [`pragmatic-programmer`](./skills/pragmatic-programmer) | Uses *The Pragmatic Programmer* principles (ETC, DRY, orthogonality, reversibility) when designing and reviewing code |
-| [`book-voice`](./skills/book-voice) | Writes in the voice and structure of books the author studied (*The Pragmatic Programmer*, *Effective Python*) |
+| [`book-voice`](./skills/book-voice) | Writes in the voice and structure of books the author studied (*The Pragmatic Programmer*, *Effective Python*, *How to Win Friends and Influence People*, *Crucial Conversations*) |
 | [`git-confirm`](./skills/git-confirm) | Commits and pushes as separate steps, each confirmed by the user right before running |
 
 ### 📦 Install
