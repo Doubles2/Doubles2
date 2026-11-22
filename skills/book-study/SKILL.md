@@ -34,6 +34,11 @@ description: 책 공부 복습 노트 정리. 사용자가 읽고 밑줄 그은 
 3. **페이지 작성**: 아래 틀대로. 로컬 `정리.md`는 만들지 않는다(정리는 노션 한 곳).
 4. **장 정리**: 장의 마지막 항목을 정리했으면 "N장 정리" 페이지를 만들거나 채운다.
    - 장 지도 표(장 소개글 밑줄 ↔ 이어지는 항목), 항목별 한 줄 핵심, 장을 한 문장으로.
+5. **코딩 스킬 보강**: 정리한 항목을 코딩 스킬에도 반영한다(`~/code/doubles2/skills/`).
+   - 실용주의 프로그래머 → `pragmatic-programmer/references/topics.md`의 해당 Topic에 ✅와 Tip 번호, 적용 요령을 보강.
+   - 파이썬 코딩의 기술 → `effective-python/references/better-ways.md`의 해당 항목 요령을 밑줄 기준으로 보강.
+   - 책 말투에서 새로 보인 특징은 `book-voice/references/<책>.md`에 추가.
+   - 로컬 커밋까지만 하고, push는 사용자에게 확인한 뒤 한다.
 
 ## 책별 노션 위치
 - **실용주의 프로그래머**: `Topic 노트` DB `collection://41c4b119-52c5-8130-9773-000b295d5051`, 상위 https://app.notion.com/p/41c4b11952c580549d70d9f6135231a9
