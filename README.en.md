@@ -45,6 +45,8 @@ The skills are written in Korean.
 | [`tstory`](./skills/tstory) | Turns lecture material (PDF, PPTX) into a Tistory blog manuscript, thumbnail, and figures |
 | [`book-study`](./skills/book-study) | Reads photos of underlined book pages and builds review pages in Notion |
 | [`resume`](./skills/resume) | Tailors a resume to a job posting and fills Word application forms without breaking their formatting |
+| [`effective-python`](./skills/effective-python) | Writes and reviews Python code following the 90 rules of *Effective Python* (2nd ed.) |
+| [`book-voice`](./skills/book-voice) | Writes in the voice and structure of books the author studied (*The Pragmatic Programmer*, *Effective Python*) |
 
 ### 📦 Install
 

@@ -43,6 +43,8 @@ AI의 새로운 아이디어를 꾸준히 배우고 탐구합니다 🌱
 | [`tstory`](./skills/tstory) | 강의 자료(PDF·PPTX)를 티스토리 원고·썸네일·본문 도식 한 세트로 만듭니다 |
 | [`book-study`](./skills/book-study) | 책에 밑줄 친 사진을 읽고 노션에 복습 페이지를 만듭니다 |
 | [`resume`](./skills/resume) | 채용공고에 맞춰 이력서·지원서를 쓰고 워드 양식을 서식 그대로 채웁니다 |
+| [`effective-python`](./skills/effective-python) | 파이썬 코드를 『파이썬 코딩의 기술』 90가지 Better Way대로 쓰고 검토합니다 |
+| [`book-voice`](./skills/book-voice) | 공부한 책(실용주의 프로그래머, 파이썬 코딩의 기술)의 말투와 구성으로 글을 씁니다 |
 
 ### 📦 설치
 
