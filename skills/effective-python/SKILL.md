@@ -22,6 +22,8 @@ effective-python은 "이 줄을 파이썬답게"를, pragmatic-programmer는 "�
 ## Step 1 — 원칙 새로 읽기
 `~/code/doubles2/principles/principles.md`를 읽고, 아래 Principles에 링크된 원칙 파일을 읽는다.
 **외워 둔 내용을 쓰지 말고 매번 새로 읽는다.**
+- Step 0에서 작은 수정으로 판정했으면 이 단계를 건너뛰고 점검·확인만 한다.
+- 원칙 파일이 없는 컴퓨터(저장소를 받지 않은 곳)면 건너뛰고, 이 파일의 Principles 줄을 기준으로 진행한다.
 
 ## Step 2 — 환경과 프로젝트 규칙
 - 대상 파이썬 버전을 먼저 본다(`python3 --version`, `pyproject.toml`, `.python-version`). 이 Mac은 `python3` = 3.13(pyenv), `/usr/bin/python3` = 3.9. 책은 3.8 기준이다. 버전 때문에 쓸 수 없는 문법은 쓰지 않는다.
